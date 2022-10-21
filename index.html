@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__nav">
+            <div class="header__menu">
+                <button><span class="sr-only">open menu</span><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
+            </div>
+
+            <div class="header__logo">
+                <div class="header__logo-wrapper">
+                    <img class="logo logo--light" src="/images/logo-white.png" alt="" width="70" height="42">
+                    <img class="logo logo--dark" src="/images/logo.png" alt="" width="70" height="42">
+                </div>
+            </div>
+
+            <div class="header__book">
+                <a href="#">Book a table</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero__title"><span>CRAFT</span> <span>&</span> <span>BAO</span></h1>
+        </section>
+
+        <section class="section bg-white">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-lg m-0">CRAFT & BAO</h1>
+
+                    <p class="text-sm font-medium m-0">KELHAM ISLAND, SHEFFIELD</p>
+                </div>
+
+                <ul class="icons">
+                    <li>
+                        <a href="#">
+                            <img src="/images/icon-menu.svg" alt="menu icon">
+                            <p>Food &amp; Drink</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/icon-bubble.svg" alt="bubble icon">
+                            <p>What's On</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/icon-map-marker.svg" alt="map marker icon">
+                            <p>Find Us</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/images/icon-clock.svg" alt="clock icon">
+                            <p>Opening Hours</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="body__text max-w-prose mx-auto text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div><img src="/images/img-carousel-1.jpg" alt=""></div>
+                    <div><img src="/images/img-carousel-2.jpg" alt=""></div>
+                    <div><img src="/images/img-carousel-3.jpg" alt=""></div>
+                    <div><img src="/images/img-carousel-4.jpg" alt=""></div>
+                </div>
+
+                <button aria-label="Previous" class="glider-prev">
+                    <span class="sr-only">previous</span>
+                </button>
+
+                <button aria-label="Next" class="glider-next">
+                    <span class="sr-only">next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="section bg-white overflow-hidden">
+            <div class="container">
+                <div class="food-drink">
+                    <h2 class="food-drink__title">FOOD & DRINK</h2>
+
+                    <div class="food-drink__row">
+                        <div class="food-drink__text">
+                            <div class="body__text--sm">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
+                            </div>
+                        </div>
+
+                        <div class="food-drink__links">
+                            <a href="#" class="btn">Food</a>
+                            <a href="#" class="btn">Drink</a>
+                        </div>
+                    </div>
+                </div>
+
+                <picture>
+                    <source srcset="/images/img-food-drink.jpg" media="(min-width: 1200px)" />
+                    <img class="food-drink__img" src="/images/img-food-drink-mobile.jpg" alt="" />
+                </picture>
+            </div>
+        </section>
+
+        <section class="section whats-on__section bg-black">
+            <div class="container whats-on__title">
+                <h2>WHAT'S ON</h2>
+            </div>
+
+            <div class="glider-contain">
+                <div class="glider whats-on">
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Monday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Tuesday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Wednesday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Thursday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Friday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Saturday</h3>
+                    </div>
+                    <div>
+                        <img src="https://dummyimage.com/820x580/ffb700/000000" alt="" width="820" height="820">
+                        <h3>Sunday</h3>
+                    </div>
+                </div>
+
+                <button aria-label="Previous" class="glider-prev whats-on-prev">
+                    <span class="sr-only">previous</span>
+                </button>
+
+                <button aria-label="Next" class="glider-next whats-on-next">
+                    <span class="sr-only">next</span>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div id='map' class="map"></div>
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoiYndhbGtlcm1pbGxzIiwiYSI6ImNsMWtsZHRjbDAxenIzZGtxcGswbndmZGkifQ.ClC7xToAETkDIreIXBv5hA';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/bwalkermills/cl6gahws8005116pk1lcgg68p',
+                center: [-1.474661, 53.389457],
+                zoom: 13,
+              });
+
+              // Create a default Marker, colored black, rotated 45 degrees.
+              const marker = new mapboxgl.Marker({ color: '#FFB600' })
+              .setLngLat([-1.474661, 53.389457])
+              .addTo(map);
+            </script>
+        </section>
+
+        <section class="section bg-white">
+            <div class="section bg-gray">
+                <img src="/images/img-social-1.jpg" alt="" width="300" height="300">
+                <img src="/images/img-social-2.jpg" alt="" width="300" height="300">
+                <img src="/images/img-social-3.jpg" alt="" width="300" height="300">
+                <img src="/images/img-social-4.jpg" alt="" width="300" height="300">
+                <img src="/images/img-social-5.jpg" alt="" width="300" height="300">
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
