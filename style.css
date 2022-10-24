@@ -61,9 +61,6 @@ p {
     padding-right: 1rem;
 }
 
-.header {
-}
-
 .header__nav {
     display: flex;
     align-items: center;
@@ -343,6 +340,68 @@ p {
     padding-top: 56.25%;
 }
 
+#marker {
+    background-image: url('/images/marker.png');
+    background-size: cover;
+    width: 70px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ 
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    font-family: 'Veneer Clean', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 10px 25px 15px 10px;
+}
+
+.mapboxgl-popup-close-button {
+    width: 42px;
+    height: 42px;
+}
+
+.social li {
+    position: relative;
+    padding-left: 3rem;
+    min-height: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.social li:nth-of-type(2) {
+    margin-bottom: 1.5rem;
+}
+
+.social .icon {
+    background-color: var(--black);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--yellow);
+}
+
+.social a {
+    color: var(--black);
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid var(--black);
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -375,6 +434,10 @@ p {
     font-size: 1.5rem;
 }
 
+.title-sm {
+    font-size: 2rem;
+}
+
 .font-medium {
     font-weight: 500;
 }
@@ -400,8 +463,18 @@ p {
     margin-bottom: 2rem;
 }
 
+.mb-8 {
+    margin-bottom: 3.5rem;
+}
+
 .overflow-hidden {
     overflow: hidden;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
 }
 
 @media (min-width: 576px) {
@@ -531,6 +604,10 @@ p {
     .text-sm {
         font-size: 2rem;
     }
+
+    .title-sm {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -546,5 +623,18 @@ p {
     .whats-on__title h2 {
         font-size: 7.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .col {
+        flex: 1 0 50%;
+        max-width: 50%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
