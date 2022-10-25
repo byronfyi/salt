@@ -18,7 +18,7 @@ function handleScroll() {
     }
 }
 
-new Glider(document.querySelector('.glider'), {
+new Glider(document.querySelector('.glider-main'), {
     slidesToShow: 1.25,
     slidesToScroll: 1,
     draggable: true,
@@ -36,13 +36,31 @@ new Glider(document.querySelector('.glider'), {
     ]
 });
 
-new Glider(document.querySelector('.whats-on'), {
+new Glider(document.querySelector('.glider-whats-on'), {
     slidesToShow: 1.25,
     slidesToScroll: 1,
     draggable: true,
     arrows: {
         prev: '.whats-on-prev',
         next: '.whats-on-next'
+    },
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2.5,
+            }
+        }
+    ]
+});
+
+new Glider(document.querySelector('.glider-salt-beer'), {
+    slidesToShow: 1.25,
+    slidesToScroll: 1,
+    draggable: true,
+    arrows: {
+        prev: '.salt-beer-prev',
+        next: '.salt-beer-next'
     },
     responsive: [
         {

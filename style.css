@@ -57,8 +57,8 @@ p {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .header__nav {
@@ -317,17 +317,17 @@ p {
     right: 1rem;
 }
 
-.whats-on {
+.glider-whats-on {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-.whats-on .glider-slide {
+.glider-whats-on .glider-slide {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-.whats-on h3 {
+.glider-whats-on h3 {
     font-size: 2rem;
     margin: 0;
     color: var(--white);
@@ -402,6 +402,67 @@ p {
     border-bottom: 2px solid var(--black);
 }
 
+.hours li {
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+
+.hours span:first-child {
+    display: inline-block;
+    width: 60px;
+}
+
+.hours-kitchen span:first-child {
+    width: 210px;
+}
+
+.footer {
+    padding: 1.5rem 0;
+}
+
+.footer h4,
+.footer p,
+.footer address,
+.form label {
+    font-size: 1.125rem;
+    font-style: normal;
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer__block {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.form input {
+    font-size: 1.125rem;
+    padding: 1rem;
+    border: 0;
+}
+
+.form button {
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 0;
+    padding: 1.125rem 1.5rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -424,6 +485,10 @@ p {
 
 .bg-gray {
     background-color: var(--gray);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
 }
 
 .text-lg {
@@ -463,8 +528,8 @@ p {
     margin-bottom: 2rem;
 }
 
-.mb-8 {
-    margin-bottom: 3.5rem;
+.mb-4 {
+    margin-bottom: 4rem;
 }
 
 .overflow-hidden {
@@ -573,7 +638,7 @@ p {
         padding-top: 2rem;
     }
 
-    .whats-on {
+    .glider-whats-on {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -583,7 +648,7 @@ p {
         margin-bottom: 0.875rem;
     }
 
-    .whats-on .glider-slide {
+    .glider-whats-on .glider-slide {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -595,6 +660,10 @@ p {
     .map {
         padding-top: 0;
         height: 500px;
+    }
+
+    .footer {
+        padding: 3rem 0;
     }
 
     .text-lg {
@@ -625,16 +694,30 @@ p {
         margin-bottom: 0.5rem;
     }
 
-    .row {
+    .row,
+    .footer__row {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+
     }
 
-    .col {
+    .col,
+    .footer__col {
         flex: 1 0 50%;
         max-width: 50%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .footer__col {
+        flex: 1 0 auto;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer__col {
+        flex: 1;
     }
 }
