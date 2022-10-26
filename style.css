@@ -54,11 +54,12 @@ p {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__nav {
@@ -73,8 +74,8 @@ p {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 100;
-    transition: background-color 0.3s;
+    z-index: 100000;
+    transition: background-color 0.2s;
 }
 
 .header--light .header__nav {
@@ -89,7 +90,7 @@ p {
     left: 0;
     right: 0;
     height: 200px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
 .header__menu,
@@ -111,7 +112,7 @@ p {
     width: 1.5rem;
     height: 1.5rem;
     color: var(--white);
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 .header--light .header__menu svg {
@@ -138,7 +139,7 @@ p {
 .logo--dark {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.3s, opacity 0.3s;
+    transition: visibility 0.2s, opacity 0.2s;
 }
 
 .header--light .logo--dark {
@@ -160,21 +161,31 @@ p {
     text-decoration: none;
     text-align: center;
     max-width: 80px;
-    transition: color 0.3s, border-color 0.3s;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.header--light .header__book a,
+.header__book a:hover,
+.header__book a:focus {
+    color: var(--black);
+    background-color: var(--white);
 }
 
 .header--light .header__book a {
-    color: var(--black);
     border-color: var(--black);
+}
+
+.header--light .header__book a:hover,
+.header--light .header__book a:focus {
+    color: var(--yellow);
+    background-color: var(--black);
 }
 
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('./images/hero-mobile.jpg');
+    background: url('./images/hero-mobile.jpg') no-repeat center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,7 +302,7 @@ p {
     border-radius: 2rem;
     padding: 0.625rem 2.5rem;
     text-decoration: none;
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.2s, background-color 0.2s;
 }
 
 .btn:hover,
@@ -302,7 +313,9 @@ p {
 
 .whats-on__section {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .whats-on__title {
@@ -336,15 +349,30 @@ p {
     margin-top: -1rem;
 }
 
+.find-us__title {
+    background-color: var(--yellow);
+    width: 60%;
+    margin-bottom: -2.5rem;
+    padding: 0.5rem 1.5rem 0.125rem 0;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+}
+
+.find-us__title h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
 .map {
-    padding-top: 56.25%;
+    padding-top: 100%;
 }
 
 #marker {
     background-image: url('./images/marker.png');
     background-size: cover;
-    width: 70px;
-    height: 100px;
+    width: 35px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -433,6 +461,11 @@ p {
     margin: 0;
 }
 
+.footer a {
+    color: var(--black);
+    text-decoration: none;
+}
+
 .footer__block {
     margin-bottom: 1.5rem;
 }
@@ -461,6 +494,13 @@ p {
     padding: 1.125rem 1.5rem;
     color: var(--white);
     background-color: var(--black);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+    color: var(--yellow);
 }
 
 .sr-only {
@@ -540,6 +580,10 @@ p {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
+}
+
+.eapps-link.eapps-link {
+    display: none !important;
 }
 
 @media (min-width: 576px) {
@@ -636,6 +680,7 @@ p {
     .whats-on__section {
         margin-top: 5rem;
         padding-top: 2rem;
+        padding-bottom: 4rem;
     }
 
     .glider-whats-on {
@@ -653,8 +698,21 @@ p {
         padding-right: 1rem;
     }
 
+    .glider-whats-on h3 {
+        font-size: 3rem;
+        margin-top: -1.25rem;
+    }
+
     .whats-on h3 {
         font-size: 4rem;
+    }
+
+    .find-us__title {
+        margin-bottom: -3rem;
+    }
+
+    .find-us__title h2 {
+        font-size: 5.5rem;
     }
 
     .map {
@@ -689,21 +747,45 @@ p {
         margin-top: -9.5rem;
     }
 
+    .whats-on__section {
+        padding-bottom: 5.5rem;
+    }
+
     .whats-on__title h2 {
         font-size: 7.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    .find-us__title {
+        width: 45%;
+        margin-bottom: -4rem;
+    }    
+
+    .find-us__title h2 {
+        font-size: 7.5rem;
+    }
+
+    #marker {
+        width: 50px;
+        height: 71px;
+    }
+
+    .footer {
+        padding: 5rem 0;
     }
 
     .row,
     .footer__row {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
     }
 
     .col,
     .footer__col {
+        flex-shrink: 0;
+        width: 100%;
         flex: 1 0 50%;
         max-width: 50%;
         padding-left: 1.5rem;
@@ -719,5 +801,14 @@ p {
 @media (min-width: 1200px) {
     .footer__col {
         flex: 1;
+    }
+
+    .map {
+        height: 700px;
+    }
+
+    #marker {
+        width: 70px;
+        height: 100px;
     }
 }
