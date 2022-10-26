@@ -562,16 +562,39 @@ p {
 }
 
 .social a {
+    display: inline-block;
     color: var(--black);
     text-decoration: none;
     display: inline-block;
     border-bottom: 2px solid var(--black);
     transition: border-color 0.2s;
+    position: relative;
+}
+
+.social span {
+    position: relative;
+    z-index: 10;
+}
+
+.social a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    transition: width .2s;
 }
 
 .social a:hover,
 .social a:focus {
     border-color: var(--yellow);
+}
+
+.social a:hover::after,
+.social a:focus::after {
+    width: 100%;
 }
 
 .hours li {
