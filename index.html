@@ -14,25 +14,43 @@
 <body>
 
     <header class="header">
-        <div class="header__nav">
-            <div class="header__menu">
-                <button><span class="sr-only">open menu</span><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
-            </div>
+        <nav class="header__nav-bar">
+            <div class="header__nav-row">
+                <div class="header__menu-toggle">
+                    <button class="hamburger" type="button" data-toggle="" aria-controls="NavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">open menu</span>
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
 
-            <div class="header__logo">
-                <div class="header__logo-wrapper">
-                    <img class="logo logo--light" src="./images/logo-white.png" alt="" width="70" height="42">
-                    <img class="logo logo--dark" src="./images/logo.png" alt="" width="70" height="42">
+                <div class="header__logo">
+                    <div class="header__logo-wrapper">
+                        <img class="logo logo--light" src="./images/logo-white.png" alt="" width="70" height="42">
+                        <img class="logo logo--dark" src="./images/logo.png" alt="" width="70" height="42">
+                    </div>
+                </div>
+
+                <div class="header__book">
+                    <a href="#">Book a table</a>
                 </div>
             </div>
 
-            <div class="header__book">
-                <a href="#">Book a table</a>
+            <div class="header__nav-collapse" id="NavCollapse">
+                <ul class="header__nav">
+                    <li><a href="#" class="header__nav-link">LONDON</a></li>
+                    <li><a href="#" class="header__nav-link">LEEDS</a></li>
+                    <li><a href="#" class="header__nav-link">SHEFFIELD</a></li>
+                    <li><a href="#" class="header__nav-link">DEPTFORD</a></li>
+                    <li><a href="#" class="header__nav-link">WOOLWICH</a></li>
+                    <li><a href="#" class="header__nav-link">BOSTON SPA</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="overflow-hidden">
         <section class="hero">
             <h1 class="hero__title"><span>CRAFT</span> <span>&</span> <span>BAO</span></h1>
         </section>
@@ -97,7 +115,7 @@
             </div>
         </section>
 
-        <section class="section bg-white overflow-hidden">
+        <section class="section bg-white">
             <div class="container">
                 <div class="food-drink">
                     <h2 class="food-drink__title">FOOD & DRINK</h2>

@@ -5,8 +5,20 @@ const offsetHeight = 240;
 const addClassOnScroll = (className) => header.classList.add(className);
 const removeClassOnScroll = (className) => header.classList.remove(className);
 
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('load', handleScroll);
+const btn = document.querySelector('[data-toggle]');
+const targetId = btn.getAttribute('aria-controls');
+const target = document.querySelector(`#${targetId}`);
+
+function toggleCollapse(e) {
+    (this.getAttribute('aria-expanded') === 'true')
+        ? this.setAttribute('aria-expanded', 'false')
+        : this.setAttribute('aria-expanded', 'true')
+
+    this.classList.toggle('active');
+
+    target.classList.toggle('show');
+    document.body.classList.toggle('menu-active');
+}
 
 function handleScroll() {
     scrollpos = window.scrollY;
@@ -17,6 +29,10 @@ function handleScroll() {
         removeClassOnScroll('header--light');
     }
 }
+
+btn.addEventListener('click', toggleCollapse);
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
 
 new Glider(document.querySelector('.glider-main'), {
     slidesToShow: 1.25,
