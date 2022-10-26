@@ -12,7 +12,7 @@ const target = document.querySelector(`#${targetId}`);
 setTimeout(function() {
     const instagram = document.querySelector('.eapps-link');
     instagram.style.display = 'none'
-}, 1000);
+}, 2000);
 
 function toggleCollapse(e) {
     (this.getAttribute('aria-expanded') === 'true')

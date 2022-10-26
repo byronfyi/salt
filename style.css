@@ -670,6 +670,25 @@ p {
     color: var(--yellow);
 }
 
+.footer__social.footer__social {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.footer__social a {
+    display: block;
+}
+
+.footer__social li {
+    display: inline-block;
+    margin-left: 0.75rem;
+}
+
+.footer__social svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
