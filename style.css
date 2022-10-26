@@ -730,6 +730,17 @@ p {
     display: none !important;
 }
 
+.enhanced .revealer {
+    opacity: 0;
+    transform: translate3d(0, -3rem, 0);
+    transition: opacity 1s, transform 1s;
+}
+
+.revealer.revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 @media (min-width: 576px) {
     .header__nav-bar {
         padding: 0 2rem;
@@ -881,6 +892,10 @@ p {
 }
 
 @media (min-width: 768px) {
+    .header__book a {
+        padding: 0.5em 2em;
+    }
+
     .food-drink {
         padding: 7.5rem 2rem;
     }
