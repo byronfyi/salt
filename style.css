@@ -106,15 +106,6 @@ p {
     max-width: 33.33%;
 }
 
-.header__menu-toggle svg {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    color: var(--white);
-    transition: color 0.2s;
-}
-
-
 .hamburger {
     background-color: transparent;
     border: 0;
@@ -725,12 +716,7 @@ p {
 
 @media (min-width: 576px) {
     .header__nav-bar {
-        height: 120px;
         padding: 0 2rem;
-    }
-
-    .header__nav-row {
-        height: 120px;
     }
 
     .header__menu-toggle svg {
