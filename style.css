@@ -566,6 +566,12 @@ p {
     text-decoration: none;
     display: inline-block;
     border-bottom: 2px solid var(--black);
+    transition: border-color 0.2s;
+}
+
+.social a:hover,
+.social a:focus {
+    border-color: var(--yellow);
 }
 
 .hours li {
