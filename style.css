@@ -772,13 +772,28 @@ p {
     display: none !important;
 }
 
-.enhanced .revealer {
+.enhanced .revealer.slide-down,
+.enhanced .revealer.slide-right,
+.enhanced .revealer.slide-left {
     opacity: 0;
-    transform: translate3d(0, -3rem, 0);
     transition: opacity 1s, transform 1s;
 }
 
-.revealer.revealed {
+.enhanced .revealer.slide-down {
+    transform: translate3d(0, -3rem, 0);
+}
+
+.enhanced .revealer.slide-right {
+    transform: translate3d(-6rem, 0, 0);
+}
+
+.enhanced .revealer.slide-left {
+    transform: translate3d(6rem, 0, 0);
+}
+
+.revealer.revealed.slide-down,
+.revealer.revealed.slide-right,
+.revealer.revealed.slide-left {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
