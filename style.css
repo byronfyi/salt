@@ -252,6 +252,7 @@ p {
 }
 
 .header__logo-wrapper {
+    display: block;
     width: 70px;
     height: 42px;
     margin-left: auto;

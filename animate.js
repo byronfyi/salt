@@ -151,25 +151,15 @@ var withinViewport = (function() {
       _requestAnimationFrame(toggleElement);
     }, 300);
 
-    var resizeHandler = throttle(function() {
-      _requestAnimationFrame(toggleElement);
-
-      // For demo purposes only
-      fullscreenIntro();
-    }, 300);
-
     scrollHandler();
 
     // Listening for events
     if (window.addEventListener) {
       addEventListener('scroll', scrollHandler, false);
-      addEventListener('resize', resizeHandler, false);
     } else if (window.attachEvent) {
       window.attachEvent('onscroll', scrollHandler);
-      window.attachEvent('onresize', resizeHandler);
     } else {
       window.onscroll = scrollHandler;
-      window.onresize = resizeHandler;
     }
 
   }
