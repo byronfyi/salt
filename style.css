@@ -818,10 +818,6 @@ p {
         background-image: url('./images/hero.jpg');
     }
 
-    .hero__title {
-        display: none;
-    }
-
     .section {
         padding-top: 7rem;
         padding-bottom: 7rem;
