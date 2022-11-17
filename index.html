@@ -51,38 +51,44 @@
     </header>
 
     <main class="overflow-hidden">
-        <section class="hero">
-            <h1 class="hero__title"><span>CRAFT</span> <span>&</span> <span>BAO</span></h1>
+        <section class="hero paralax">
+            <div class="paralax-bg"></div>
+            
+            <h1 class="hero__title t1">
+                <span>CRAFT</span>
+                <span>&</span>
+                <span>BAO</span>
+            </h1>
         </section>
 
         <section class="section bg-white">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="text-lg m-0 revealer slide-down">CRAFT & BAO</h1>
+                    <h1 class="text-lg m-0 t2">CRAFT & BAO</h1>
 
-                    <p class="text-sm font-medium m-0 revealer slide-down">KELHAM ISLAND, SHEFFIELD</p>
+                    <p class="text-sm font-medium m-0 t2">KELHAM ISLAND, SHEFFIELD</p>
                 </div>
 
-                <ul class="icons revealer slide-down">
-                    <li>
+                <ul class="icons">
+                    <li class="t2">
                         <a href="#FoodAndDrink">
                             <img src="./images/icon-menu.svg" alt="menu icon">
                             <p>Food &amp; Drink</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="#WhatsOn">
                             <img src="./images/icon-bubble.svg" alt="bubble icon">
                             <p>What's On</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="#FindUs">
                             <img src="./images/icon-map-marker.svg" alt="map marker icon">
                             <p>Find Us</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="#OpeningHours">
                             <img src="./images/icon-clock.svg" alt="clock icon">
                             <p>Opening Hours</p>
@@ -90,7 +96,7 @@
                     </li>
                 </ul>
 
-                <div class="body__text max-w-prose mx-auto text-center revealer slide-down">
+                <div class="body__text max-w-prose mx-auto text-center t2">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
                 </div>
             </div>
@@ -117,17 +123,17 @@
 
         <section class="section bg-white" id="FoodAndDrink">
             <div class="container">
-                <div class="food-drink">
-                    <h2 class="food-drink__title revealer slide-down">FOOD & DRINK</h2>
+                <div class="food-drink t3-a">
+                    <h2 class="food-drink__title">FOOD & DRINK</h2>
 
                     <div class="food-drink__row">
                         <div class="food-drink__text">
-                            <div class="body__text--sm revealer slide-down">
+                            <div class="body__text--sm">
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et</p>
                             </div>
                         </div>
 
-                        <div class="food-drink__links revealer slide-down">
+                        <div class="food-drink__links">
                             <a href="#" class="btn">Food</a>
                             <a href="#" class="btn">Drink</a>
                         </div>
@@ -136,14 +142,14 @@
 
                 <picture>
                     <source srcset="./images/img-food-drink.jpg" media="(min-width: 1200px)" />
-                    <img class="food-drink__img" src="./images/img-food-drink-mobile.jpg" alt="" />
+                    <img class="food-drink__img t3-b" src="./images/img-food-drink-mobile.jpg" alt="" />
                 </picture>
             </div>
         </section>
 
         <section class="section whats-on__section bg-black" id="WhatsOn">
             <div class="container whats-on__title">
-                <h2 class="revealer slide-left">WHAT'S ON</h2>
+                <h2 class="revealer t4">WHAT'S ON</h2>
             </div>
 
             <div class="glider-contain">
@@ -189,7 +195,7 @@
         </section>
 
         <section>
-            <div class="find-us__title revealer slide-right">
+            <div class="find-us__title t5">
                 <h2 class="" id="FindUs">FIND US</h2>
             </div>
 
@@ -243,8 +249,8 @@
         <section class="section bg-white" id="OpeningHours">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="revealer slide-down">
+                    <div class="col col-auto">
+                        <div class="revealer t6">
                             <h3 class="title-sm">Opening HOURS</h3>
 
                             <ul class="list-unstyled body__text hours mb-4">
@@ -257,8 +263,10 @@
                                 <li><span>Sun:</span> <span>12:00 - 22:00</span></li>
                             </ul>
                         </div>
+                    </div>
 
-                        <div class="revealer slide-down">
+                    <div class="col col-auto">
+                        <div class="revealer t6">
                             <h3 class="title-sm">KITCHEN Opening HOURS</h3>
 
                             <ul class="list-unstyled body__text hours hours-kitchen mb-4">
@@ -269,8 +277,8 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="revealer slide-down">
+                    <div class="col col-auto">
+                        <div class="revealer t6">
                             <h3 class="title-sm">CONTACT US</h3>
                             
                             <ul class="social list-unstyled body__text mb-4">
@@ -374,6 +382,8 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./app.js"></script>
 
-    <script src="./animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./animations.js"></script>
 </body>
 </html>
