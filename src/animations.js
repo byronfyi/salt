@@ -103,6 +103,7 @@ function mouse() {
 
   const nav = document.querySelector('.header__nav');
   const ball = document.querySelector('.ball');
+
   nav.addEventListener('mouseover', (e) => {
     ball.style.visibility = 'visible';
     ball.style.opacity = 1;
