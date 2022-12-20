@@ -29,6 +29,7 @@
 
 :root {
     --yellow: #FFB600;
+    --teal: #307978;
     --black: #000;
     --white: #fff;
     --gray: #C8C8C8;
@@ -301,7 +302,7 @@ p {
 
 .paralax {
     position: relative;
-    padding-top: 250px;
+    padding-top: 200px;
 }
 
 .paralax-bg {
@@ -412,45 +413,9 @@ p {
     padding-bottom: 5rem;
 }
 
-.icons {
-    list-style: none;
-    padding: 0;
-    margin: 4rem auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 960px;
-}
-
-.icons li {
-    flex: 1 0 50%;
-    max-width: 50%;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.icons a {
-    display: block;
-    color: var(--black);
-    text-decoration: none;
-    padding: 2rem;
-}
-
-.icons a:hover img,
-.icons a:focus img {
-    transform: scale3d(1.2, 1.2, 1);
-}
-
-.icons img {
-    height: 50px;
-    width: 50px;
+.title {
+    font-size: 4rem;
     margin-bottom: 1rem;
-    transition: transform 0.2s;
-}
-
-.icons p {
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 0;
 }
 
 .body__text {
@@ -515,7 +480,7 @@ p {
     background-color: var(--black);
     border: 0;
     border-radius: 2rem;
-    padding: 0.625rem 2.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     transition: color 0.2s, background-color 0.2s;
 }
@@ -791,8 +756,20 @@ p {
     background-color: var(--gray);
 }
 
+.bg-teal {
+    background-color: var(--teal);
+}
+
 .bg-yellow {
     background-color: var(--yellow);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-white {
+    color: var(--white);
 }
 
 .text-lg {
@@ -1001,6 +978,10 @@ p {
 }
 
 @media (min-width: 768px) {
+    .paralax {
+        padding-top: 300px;
+    }
+
     .hero__title {
         font-size: 8rem;
     }
