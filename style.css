@@ -16,11 +16,30 @@
     url("/fonts/VeneerClean-Reg.svg#VeneerClean-Reg") format("svg"); /* iOS 4.1- */
 }
 
+@font-face {
+    font-family: "Veneer Clean Soft";
+    font-weight: 400;
+    src: url("/fonts/VeneerClean-Soft.eot"); /* IE9*/
+    src: url("/fonts/VeneerClean-Soft.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/VeneerClean-Soft.woff2") format("woff2"), /* chrome、firefox */
+    url("/fonts/VeneerClean-Soft.woff") format("woff"), /* chrome、firefox */
+    url("/fonts/VeneerClean-Soft.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/fonts/VeneerClean-Soft.svg#VeneerClean-Soft") format("svg"); /* iOS 4.1- */
+}
+
 :root {
     --yellow: #FFB600;
     --black: #000;
     --white: #fff;
     --gray: #C8C8C8;
+}
+
+::selection {
+    background-color: var(--yellow);
+}
+
+::-moz-selection {
+    background-color: var(--yellow);
 }
 
 *,
@@ -48,7 +67,7 @@ select {
 }
 
 h1, h2, h3 {
-    font-family: 'Veneer Clean', sans-serif;
+    font-family: 'Veneer Clean Soft', sans-serif;
     font-weight: 400;
     line-height: 1;
     margin-top: 0;
@@ -75,6 +94,7 @@ p {
     right: 0;
     left: 0;
     z-index: 100000;
+    min-width: 375px;
     transition: background-color 0.2s;
 }
 
@@ -109,77 +129,6 @@ p {
 .header__book {
     flex: 1 0 33.33%;
     max-width: 33.33%;
-}
-
-.hamburger {
-    background-color: transparent;
-    border: 0;
-    color: inherit;
-    cursor: pointer;
-    display: flex;
-    font: inherit;
-    margin: 0 0 0 -8px;
-    overflow: visible;
-    padding: 15px;
-    text-transform: none;
-    transition-duration: .2s;
-    transition-property: opacity,filter;
-    transition-timing-function: linear;
-}
-
-.hamburger-box {
-    display: inline-block;
-    height: 21px;
-    position: relative;
-    width: 24px;
-}
-
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-    background-color: var(--white);
-    display: block;
-    height: 3px;
-    position: absolute;
-    transition-duration: .2s;
-    transition-property: transform, background-color;
-    transition-timing-function: ease;
-    width: 24px;
-}
-
-.active .hamburger-inner,
-.active .hamburger-inner:after,
-.active .hamburger-inner:before,
-.header--light .hamburger-inner,
-.header--light .hamburger-inner:after,
-.header--light .hamburger-inner:before {
-    background-color: var(--black);
-}
-
-.hamburger-inner:before {
-    content: "";
-    top: 9px;
-    transition-duration: .2s;
-    transition-property: transform,opacity,background-color;
-    transition-timing-function: ease;
-}
-
-.hamburger-inner:after {
-    content: "";
-    top: 18px;
-}
-
-.active .hamburger-inner {
-    transform: translate3d(0,9px,0) rotate(45deg);
-}
-
-.active .hamburger-inner:before {
-    opacity: 0;
-    transform: rotate(-45deg) translate3d(0,-6px,0);
-}
-
-.active .hamburger-inner:after {
-    transform: translate3d(0,-18px,0) rotate(-90deg);
 }
 
 .header__nav-collapse {
@@ -313,32 +262,34 @@ p {
     text-align: right;
 }
 
-.header__book a {
+.header__btn {
     font-size: 0.875rem;
     font-weight: 500;
     display: inline-block;
     color: var(--white);
-    padding: 0.5em 1em;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0.25em 0.75rem;
     border: 2px solid var(--white);
     text-decoration: none;
     text-align: center;
-    max-width: 80px;
+    cursor: pointer;
     transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
-.header--light .header__book a,
-.header__book a:hover,
-.header__book a:focus {
+.header--light .header__btn,
+.header__btn:hover,
+.header__btn:focus {
     color: var(--black);
     background-color: var(--white);
 }
 
-.header--light .header__book a {
+.header--light .header__btn {
     border-color: var(--black);
 }
 
-.header--light .header__book a:hover,
-.header--light .header__book a:focus {
+.header--light .header__btn:hover,
+.header--light .header__btn:focus {
     color: var(--yellow);
     background-color: var(--black);
 }
@@ -350,10 +301,7 @@ p {
 
 .paralax {
     position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 250px;
 }
 
 .paralax-bg {
@@ -366,7 +314,7 @@ p {
     z-index: -1;
     background: url('./images/hero.jpg') no-repeat center fixed;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 0px;
     background-repeat: no-repeat;
 }
 
@@ -375,10 +323,88 @@ p {
     line-height: 1;
     color: var(--white);
     text-align: center;
+    margin-bottom: 0;
 }
 
 .hero__title span {
     display: block;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+}
+
+.hero__icons img {
+    height: 90px;
+    margin: 0.5rem 2rem;
+    display: block;
+    transition: transform 0.15s ease-in-out;
+}
+
+.hero__icons a:hover img,
+.hero__icons a:focus img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.hero__intro {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero__bottom {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    position: relative;
+}
+
+.hero__bottom::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.hero__offering {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__offering li {
+    font-family: 'Veneer Clean Soft', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.hero__offering img {
+    margin-right: 1rem;
 }
 
 .section {
@@ -834,17 +860,17 @@ p {
         height: 2rem;
     }
 
-    .header__book a {
-        font-size: 1rem;
-        max-width: none;
-    }
-
     .hero__title {
         font-size: 6rem;
     }
 
     .hero {
         background-image: url('./images/hero.jpg');
+    }
+
+    .hero__icons img {
+        height: 130px;
+        margin: 1rem 2rem;
     }
 
     .section {
@@ -975,8 +1001,16 @@ p {
 }
 
 @media (min-width: 768px) {
-    .header__book a {
-        padding: 0.5em 2em;
+    .hero__title {
+        font-size: 8rem;
+    }
+
+    .hero__text {
+        margin-bottom: 5rem;
+    }
+
+    .hero__intro {
+        font-size: 1.125rem;
     }
 
     .food-drink {
@@ -1048,6 +1082,10 @@ p {
 @media (min-width: 1200px) {
     .header__nav-collapse {
         padding-top: 150px;
+    }
+
+    .hero__icons img {
+        margin: 1rem 3rem;
     }
 
     .footer__col {

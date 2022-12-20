@@ -18,7 +18,7 @@ function paralax() {
     // the first image (i === 0) should be handled differently because it should start at the very top.
     // use function-based values in order to keep things responsive
     gsap.fromTo(section.bg, {
-      backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : '50% 0px'
+      backgroundPosition: () => '50% 0px'
     }, {
       backgroundPosition: () => `50% ${window.innerHeight * (0.25 - getRatio(section))}px`,
       ease: 'none',
@@ -34,7 +34,7 @@ function paralax() {
 }
 
 function transitions() {
-  gsap.from('.t1 span', {
+  gsap.from('.t1', {
     stagger: 0.15,
     opacity: 0,
     y: 40,
