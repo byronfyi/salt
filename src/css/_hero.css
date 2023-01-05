@@ -1,0 +1,189 @@
+.hero {
+    width: 100%;
+    background: url('./images/hero-mobile.jpg') no-repeat center;
+}
+
+.paralax {
+    position: relative;
+    padding-top: 200px;
+}
+
+.paralax-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('./images/hero.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero__title span {
+    display: block;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__icons img {
+    width: 110px;
+    height: auto;
+    margin: 1rem;
+    display: block;
+    transition: transform 0.15s ease-in-out;
+}
+
+.hero__icons a:hover img,
+.hero__icons a:focus img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.hero__intro {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero__bottom {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    position: relative;
+}
+
+.hero__bottom::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.hero__offering {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__offering li {
+    font-family: 'Veneer Clean Soft', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.hero__offering img {
+    margin-right: 1rem;
+    width: 30px;
+    height: auto;
+}
+
+@media (min-width: 576px) {
+    .hero__title {
+        font-size: 6rem;
+    }
+
+    .hero {
+        background-image: url('./images/hero.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .paralax {
+        padding-top: 300px;
+    }
+
+    .hero__title {
+        font-size: 10rem;
+        line-height: 0.875;
+    }
+
+    .hero__text {
+        margin-bottom: 5rem;
+    }
+
+    .hero__intro {
+        font-size: 1.125rem;
+    }
+
+    .hero__icons {
+        max-width: 500px;
+    }
+
+    .hero__icons img {
+        width: 180px;
+        margin: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero__title {
+        font-size: 11rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero__text {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .hero__icons {
+        max-width: 1200px;
+    }
+
+    .hero__icons img {
+        margin: 1.5rem 2rem;
+    }
+
+    .hero__intro {
+        font-size: 1.375rem;
+        margin-bottom: 5rem;
+    }
+
+    .hero__offering li {
+        font-size: 2.375rem;
+    }
+
+    .hero__offering img {
+        width: 40px;
+    }
+}

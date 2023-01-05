@@ -1,0 +1,97 @@
+:root {
+    --yellow: #FFB600;
+    --teal: #307978;
+    --black: #000;
+    --white: #fff;
+    --gray: #C8C8C8;
+}
+
+::selection {
+    background-color: var(--yellow);
+}
+
+::-moz-selection {
+    background-color: var(--yellow);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    background: var(--white);
+    min-width: 375px;
+    height: 3000px;
+    margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Veneer Clean Soft', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.body__text {
+    font-size: 1rem;
+}
+
+.body__text--sm {
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+    .section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .icons li {
+        flex: 1 0 25%;
+        max-width: 25%;
+    }
+
+    .body__text {
+        font-size: 1.25rem;
+    }
+
+    .body__text--sm {
+        font-size: 1.125rem;
+    }
+}

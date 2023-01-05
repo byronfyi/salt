@@ -4,8 +4,10 @@ import '@splidejs/splide/css';
 const carousel = () => {
     var splide = new Splide( '.splide', {
       type   : 'loop',
-      perPage: 3,
+      perPage: 5,
       perMove: 1,
+      gap: '1em',
+      focus: 'center',
     } );
 
     console.log(splide);

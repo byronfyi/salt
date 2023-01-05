@@ -1,9 +1,9 @@
-import menuToggle from './src/menu-toggle.js';
-import stickyHeader from './src/sticky-header.js';
-import initAnimations from './src/animations.js';
-import carousel from './src/carousel.js';
-import map from './src/map.js';
-import removeInstagramEappsLink from './src/remove-instagram-eapps-link.js';
+import menuToggle from './src/js/menu-toggle.js';
+import stickyHeader from './src/js/sticky-header.js';
+import initAnimations from './src/js/animations.js';
+import carousel from './src/js/carousel.js';
+import map from './src/js/map.js';
+import removeInstagramEappsLink from './src/js/remove-instagram-eapps-link.js';
 
 menuToggle();
 stickyHeader();
