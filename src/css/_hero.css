@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    background: url('./images/hero-mobile.jpg') no-repeat center;
+    background: url('/images/hero-mobile.jpg') no-repeat center;
 }
 
 .paralax {
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('./images/hero.jpg') no-repeat center fixed;
+    background: url('/images/hero.jpg') no-repeat center fixed;
     background-size: cover;
     background-position: 50% 0px;
     background-repeat: no-repeat;
@@ -121,23 +121,29 @@
     .hero__title {
         font-size: 6rem;
     }
-
-    .hero {
-        background-image: url('./images/hero.jpg');
-    }
 }
 
 @media (min-width: 768px) {
+    .hero {
+        background: none;
+    }
+
     .paralax {
         padding-top: 300px;
+    }
+
+    .paralax-bg {
+        display: flex;
     }
 
     .hero__title {
         font-size: 10rem;
         line-height: 0.875;
+        margin-bottom: 1rem;
     }
 
     .hero__text {
+        font-size: 2rem;
         margin-bottom: 5rem;
     }
 
@@ -158,12 +164,10 @@
 @media (min-width: 1200px) {
     .hero__title {
         font-size: 11rem;
-        margin-bottom: 1rem;
     }
 
     .hero__text {
         font-size: 2.5rem;
-        margin-bottom: 5rem;
     }
 
     .hero__icons {

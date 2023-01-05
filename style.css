@@ -598,12 +598,4 @@
         width: 70px;
         height: 100px;
     }
-
-    .hero {
-        background: none;
-    }
-
-    .paralax-bg {
-        display: flex;
-    }
 }
