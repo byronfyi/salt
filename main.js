@@ -6,7 +6,7 @@ import map from './src/js/map.js';
 import removeInstagramEappsLink from './src/js/remove-instagram-eapps-link.js';
 
 menuToggle();
-stickyHeader();
+// stickyHeader();
 initAnimations();
 carousel();
 map();
