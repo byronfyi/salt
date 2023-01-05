@@ -48,18 +48,11 @@ function transitions() {
     y: 40,
   });
 
-  gsap.from('.t3-a', {
-    scrollTrigger: '.t3-a',
-    delay: 0.15,
+  gsap.from('.t2-bg', {
+    scrollTrigger: '.t2-bg',
+    delay: 0.75,
     opacity: 0,
-    x: -400,
-  });
-
-  gsap.from('.t3-b', {
-    scrollTrigger: '.t3-b',
-    delay: 0.15,
-    opacity: 0,
-    x: 400,
+    x: 40,
   });
 
   gsap.from('.t4', {

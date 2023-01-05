@@ -49,15 +49,6 @@ p {
     margin-top: 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .section {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -77,11 +68,6 @@ p {
 }
 
 @media (min-width: 576px) {
-    .section {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
-
     .icons li {
         flex: 1 0 25%;
         max-width: 25%;

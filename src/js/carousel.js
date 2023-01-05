@@ -3,7 +3,7 @@ import '@splidejs/splide/css';
 
 const carousel = () => {
     var splide = new Splide( '.splide', {
-      type   : 'loop',
+      type: 'loop',
       perPage: 5,
       perMove: 1,
       gap: '1em',
