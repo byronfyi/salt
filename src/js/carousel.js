@@ -12,8 +12,6 @@ const carousel = () => {
       pagination: false,
     } );
 
-    console.log(splide);
-
     splide.mount();
 }
 

@@ -10,4 +10,4 @@ menuToggle();
 initAnimations();
 carousel();
 map();
-removeInstagramEappsLink();
+// removeInstagramEappsLink();

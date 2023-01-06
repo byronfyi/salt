@@ -41,6 +41,7 @@
     background-size: 30px;
     width: 102%;
     margin-left: -1%;
+    box-shadow: 0 10px 0 hsl(33deg 50% 10% / 30%);
 }
 
 .drinks__carousel img {
@@ -133,6 +134,7 @@
         padding: 4rem 0;
         background-position: top 2px center, bottom 2px center;
         background-size: 60px;
+        box-shadow: 0 1rem 0 hsl(33deg 50% 10% / 30%);
     }
 
     .drinks__carousel img {
