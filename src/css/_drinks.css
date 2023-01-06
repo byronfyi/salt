@@ -19,7 +19,7 @@
 .drinks__title {
     font-size: 4rem;
     color: var(--yellow);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .drinks__text {
@@ -32,18 +32,28 @@
 }
 
 .drinks__carousel {
-    padding: 2rem 0rem;
-    transform: rotate(-1deg);
+    padding: 2rem 0;
+    transform: rotate(-2deg);
     background-image: url('/images/bg-carousel.png'), url('/images/bg-carousel.png');
     background-color: #0F171F;
     background-repeat: repeat-x;
     background-position: top 2px center, bottom 2px center;
     background-size: 30px;
+    width: 102%;
+    margin-left: -1%;
 }
 
 .drinks__carousel img {
     width: 200px !important;
     height: auto;
+}
+
+.drinks__carousel .splide__arrow--next {
+    right: calc(1em + 1%);
+}
+
+.drinks__carousel .splide__arrow--prev {
+    left: calc(1em + 1%);
 }
 
 @media (min-width: 576px) {
@@ -119,13 +129,33 @@
         max-width: 50ch;
     }
 
+    .drinks__carousel {
+        padding: 4rem 0;
+        background-position: top 2px center, bottom 2px center;
+        background-size: 60px;
+    }
+
     .drinks__carousel img {
-        width: 289px !important;
+        width: 330px !important;
     }
 }
 
 @media (min-width: 1400px) {
     .drinks__col {
-        max-width: 80%;
+        max-width: 70%;
+    }
+
+    .drinks__bg {
+        background-size: 600px;
+        width: 600px;
+        height: 600px;
+        top: 0.5rem;
+        right: -3.5rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .drinks__col {
+        max-width: 100%;
     }
 }
