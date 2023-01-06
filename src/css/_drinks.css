@@ -33,8 +33,17 @@
 
 .drinks__carousel {
     padding: 2rem 0rem;
-    background-color: #0F171F;
     transform: rotate(-1deg);
+    background-image: url('/images/bg-carousel.png'), url('/images/bg-carousel.png');
+    background-color: #0F171F;
+    background-repeat: repeat-x;
+    background-position: top 2px center, bottom 2px center;
+    background-size: 30px;
+}
+
+.drinks__carousel img {
+    width: 200px !important;
+    height: auto;
 }
 
 @media (min-width: 576px) {
@@ -108,6 +117,10 @@
 
     .drinks__text {
         max-width: 50ch;
+    }
+
+    .drinks__carousel img {
+        width: 289px !important;
     }
 }
 

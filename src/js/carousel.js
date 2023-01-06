@@ -8,6 +8,8 @@ const carousel = () => {
       perMove: 1,
       gap: '1em',
       focus: 'center',
+      autoWidth: true,
+      pagination: false,
     } );
 
     console.log(splide);
