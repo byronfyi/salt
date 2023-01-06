@@ -1,0 +1,111 @@
+.find-us {
+    border: 10px solid var(--yellow);
+    position: relative;
+}
+
+.find-us__title-wrapper {
+    background-color: var(--yellow);
+    width: 70%;
+    padding: 0.5rem 1rem 0.125rem 0;
+    text-align: right;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0.5rem 0.5rem 0 var(--black);
+}
+
+.find-us__title {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.map {
+    padding-top: 150%;
+}
+
+#marker {
+    background-image: url('/images/marker.png');
+    background-size: cover;
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ 
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    font-family: 'Veneer Clean', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 10px 25px 15px 10px;
+}
+
+.mapboxgl-popup-close-button {
+    width: 42px;
+    height: 42px;
+}
+
+@media (min-width: 576px) {
+    .find-us__title-wrapper {
+        width: 66%;
+        padding: 0.75rem 1.75rem 0.125rem 0;
+    }
+
+    .find-us__title {
+        font-size: 5rem;
+    }
+
+    .map {
+        padding-top: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .find-us__container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        max-width: 1416px;
+    }
+
+    .find-us__title-wrapper {
+        width: 440px;
+    }
+
+    .find-us__title {
+        font-size: 6rem;
+    }
+
+    .map {
+        padding-top: 0;
+        height: 760px;
+    }
+
+    #marker {
+        width: 50px;
+        height: 71px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .find-us__title-wrapper {
+        width: 530px;
+        box-shadow: 0.625rem 0.625rem 0 var(--black);
+    }
+
+    .find-us__title {
+        font-size: 7rem;
+    }
+
+    .map {
+        height: 700px;
+    }
+
+    #marker {
+        width: 70px;
+        height: 100px;
+    }
+}

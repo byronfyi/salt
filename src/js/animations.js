@@ -39,48 +39,6 @@ function transitions() {
     opacity: 0,
     y: 40,
   });
-
-  // gsap.from('.t2', {
-  //   scrollTrigger: '.t2',
-  //   stagger: 0.15,
-  //   delay: 0.15,
-  //   opacity: 0,
-  //   y: 40,
-  // });
-
-  // gsap.from('.t2-bg', {
-  //   scrollTrigger: '.t2-bg',
-  //   delay: 0.75,
-  //   opacity: 0,
-  //   x: 40,
-  // });
-
-  gsap.from('.t4', {
-    scrollTrigger: {
-      trigger: '.t4',
-      start: 'bottom bottom',
-      end: 'end 100px',
-      scrub: 1,
-    },
-    x: -400,
-    ease: 'none',
-    duration: 3,
-  });
-
-  gsap.from('.t5', {
-    scrollTrigger: '.t5',
-    delay: 0.15,
-    opacity: 0,
-    x: -400,
-  });
-
-  gsap.from('.t6', {
-    scrollTrigger: '.t6',
-    stagger: 0.15,
-    delay: 0.15,
-    opacity: 0,
-    y: 40,
-  });
 }
 
 function mouse() {

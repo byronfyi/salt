@@ -4,77 +4,12 @@
 @import url('./src/css/_header.css');
 @import url('./src/css/_hero.css');
 @import url('./src/css/_drinks.css');
+@import url('./src/css/_whats-on.css');
+@import url('./src/css/_find-us.css');
 @import url('./src/css/_buttons.css');
 @import url('./src/css/_footer.css');
 @import url('./src/css/_forms.css');
 @import url('./src/css/_utilities.css');
-
-.splide img {
-    width: 100%;
-}
-
-.whats-on__section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-.whats-on__title {
-    position: relative;
-}
-
-.whats-on__title h2 {
-    font-size: 4rem;
-    margin-bottom: 1.125rem;
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
-}
-
-.find-us__title {
-    background-color: var(--yellow);
-    width: 60%;
-    margin-bottom: -2.5rem;
-    padding: 0.5rem 1.5rem 0.125rem 0;
-    text-align: right;
-    position: relative;
-    z-index: 10;
-}
-
-.find-us__title h2 {
-    font-size: 4rem;
-    margin: 0;
-}
-
-.map {
-    padding-top: 100%;
-}
-
-#marker {
-    background-image: url('/images/marker.png');
-    background-size: cover;
-    width: 35px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
- 
-.mapboxgl-popup {
-    max-width: 200px;
-}
-
-.mapboxgl-popup-content {
-    font-family: 'Veneer Clean', sans-serif;
-    font-size: 2rem;
-    line-height: 1;
-    padding: 10px 25px 15px 10px;
-}
-
-.mapboxgl-popup-close-button {
-    width: 42px;
-    height: 42px;
-}
 
 .social li {
     position: relative;
@@ -157,34 +92,6 @@
 }
 
 @media (min-width: 576px) {
-    .whats-on__section {
-        margin-top: 5rem;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-
-    .whats-on__title h2 {
-        font-size: 5.5rem;
-        margin-bottom: 0.875rem;
-    }
-
-    .whats-on h3 {
-        font-size: 4rem;
-    }
-
-    .find-us__title {
-        margin-bottom: -3rem;
-    }
-
-    .find-us__title h2 {
-        font-size: 5.5rem;
-    }
-
-    .map {
-        padding-top: 0;
-        height: 500px;
-    }
-
     .footer {
         padding: 3rem 0;
     }
@@ -203,29 +110,6 @@
 }
 
 @media (min-width: 768px) {
-    .whats-on__section {
-        padding-bottom: 5.5rem;
-    }
-
-    .whats-on__title h2 {
-        font-size: 7.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .find-us__title {
-        width: 45%;
-        margin-bottom: -4rem;
-    }    
-
-    .find-us__title h2 {
-        font-size: 7.5rem;
-    }
-
-    #marker {
-        width: 50px;
-        height: 71px;
-    }
-
     .footer {
         padding: 5rem 0;
     }
@@ -245,14 +129,5 @@
 @media (min-width: 1200px) {
     .footer__col {
         flex: 1;
-    }
-
-    .map {
-        height: 700px;
-    }
-
-    #marker {
-        width: 70px;
-        height: 100px;
     }
 }

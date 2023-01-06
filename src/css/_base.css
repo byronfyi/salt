@@ -1,6 +1,7 @@
 :root {
     --yellow: #FFB600;
     --teal: #307978;
+    --pink: #F05CA7;
     --black: #000;
     --white: #fff;
     --gray: #C8C8C8;
@@ -18,6 +19,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

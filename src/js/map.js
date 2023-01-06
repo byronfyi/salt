@@ -20,7 +20,7 @@ const map = () => {
 
   // create the popup
   const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-  'Green Ln, Sheffield S3 8SE'
+  '488 ROUNDHAY RD. OAKWOOD. LEEDS LS8 2H0'
   );
 
   // create DOM element for the marker
