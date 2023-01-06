@@ -40,20 +40,20 @@ function transitions() {
     y: 40,
   });
 
-  gsap.from('.t2', {
-    scrollTrigger: '.t2',
-    stagger: 0.15,
-    delay: 0.15,
-    opacity: 0,
-    y: 40,
-  });
+  // gsap.from('.t2', {
+  //   scrollTrigger: '.t2',
+  //   stagger: 0.15,
+  //   delay: 0.15,
+  //   opacity: 0,
+  //   y: 40,
+  // });
 
-  gsap.from('.t2-bg', {
-    scrollTrigger: '.t2-bg',
-    delay: 0.75,
-    opacity: 0,
-    x: 40,
-  });
+  // gsap.from('.t2-bg', {
+  //   scrollTrigger: '.t2-bg',
+  //   delay: 0.75,
+  //   opacity: 0,
+  //   x: 40,
+  // });
 
   gsap.from('.t4', {
     scrollTrigger: {
