@@ -1,11 +1,4 @@
 @font-face {
-    font-family: "Rubik";
-    src: url("/fonts/Rubik-Variable.ttf") format("ttf supports variations"),
-       url("/fonts/Rubik-Variable.ttf") format("ttf-variations");
-    font-weight: 100 1000;
-}
-
-@font-face {
     font-family: "Veneer Clean";
     font-weight: 400;
     src: url("/fonts/VeneerClean-Reg.eot"); /* IE9*/
