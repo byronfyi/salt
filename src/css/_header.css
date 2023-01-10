@@ -1,8 +1,7 @@
 .header__nav-bar {
     padding: 0 1rem;
     background-color: transparent;
-/*    position: fixed;*/
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -19,6 +18,11 @@
     height: 100px;
     position: relative;
     z-index: 100;
+    transition: height 0.2s ease-in-out;
+}
+
+.header--light .header__nav-row {
+    height: 70px;
 }
 
 .header--light .header__nav-bar {
@@ -150,6 +154,12 @@
     margin-right: auto;
     position: relative;
     top: 0.25rem;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out;
+}
+
+.header--light .header__logo-wrapper {
+    width: 60px;
+    height: 38px;
 }
 
 .logo {
@@ -224,10 +234,20 @@
         height: 138px;
     }
 
+    .header--light .header__nav-row {
+        height: 90px;
+    }
+
     .header__logo-wrapper {
         width: 130px;
         height: 82px;
         top: 0.875rem;
+    }
+
+    .header--light .header__logo-wrapper {
+        width: 80px;
+        height: 50px;
+        top: 0;
     }
 
     .header__btn {
@@ -240,10 +260,6 @@
 @media (min-width: 1200px) {
     .header__nav-bar {
         padding: 0 2.5rem;
-    }
-
-    .header__nav-row {
-        height: 138px;
     }
 
     .header__logo-wrapper {

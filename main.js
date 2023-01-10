@@ -7,7 +7,7 @@ import accordion from './src/js/accordion.js';
 import removeInstagramEappsLink from './src/js/remove-instagram-eapps-link.js';
 
 menuToggle();
-// stickyHeader();
+stickyHeader();
 initAnimations();
 carousel();
 accordion();
