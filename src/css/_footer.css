@@ -1,4 +1,6 @@
 .footer {
+    background-color: var(--teal);
+    color: var(--white);
     padding: 1.5rem 0;
 }
 
@@ -16,7 +18,7 @@
 }
 
 .footer a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -33,12 +35,18 @@
     display: block;
 }
 
+.footer__social a:hover img,
+.footer__social a:hover img {
+    filter: contrast(0) brightness(2);
+}
+
 .footer__social li {
     display: inline-block;
     margin-left: 0.75rem;
 }
 
-.footer__social svg {
+.footer__social img {
+    display: block;
     width: 2.5rem;
     height: 2.5rem;
 }
