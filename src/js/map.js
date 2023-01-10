@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 const map = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiYndhbGtlcm1pbGxzIiwiYSI6ImNsMWtsZHRjbDAxenIzZGtxcGswbndmZGkifQ.ClC7xToAETkDIreIXBv5hA';
 
-  const center = [-1.474661, 53.389457];
+  const center = [53.827120, -1.505150];
 
   var map = new mapboxgl.Map({
     container: 'map',
@@ -20,7 +20,7 @@ const map = () => {
 
   // create the popup
   const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-  '488 ROUNDHAY RD. OAKWOOD. LEEDS LS8 2H0'
+  'Salt Craft + Cocktails, 488 Roundhay Rd, Roundhay, Oakwood, Leeds, LS8 2HU'
   );
 
   // create DOM element for the marker
