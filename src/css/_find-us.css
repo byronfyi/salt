@@ -1,6 +1,7 @@
 .find-us {
     border: 10px solid var(--yellow);
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .find-us__title-wrapper {
@@ -49,6 +50,26 @@
     height: 42px;
 }
 
+.find-us__text {
+    font-family: 'Veneer Clean', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--yellow);
+}
+
+.find-us__text p {
+    margin-bottom: 0;
+}
+
+.find-us__text a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.find-us__text span {
+    text-decoration: underline;
+}
+
 @media (min-width: 576px) {
     .find-us__title-wrapper {
         width: 66%;
@@ -87,6 +108,23 @@
     #marker {
         width: 50px;
         height: 71px;
+    }
+
+    .find-us__text {
+        font-size: 3rem;
+        position: relative;
+    }
+
+    .find-us__bg {
+        background: url('/images/img-can-2.png') no-repeat top left;
+        background-size: 317px;
+        width: 317px;
+        height: 394px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        bottom: -80px;
     }
 }
 

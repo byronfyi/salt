@@ -1,12 +1,14 @@
-/*@import url('./src/css/_fonts.css');
+@import url('./src/css/_fonts.css');
 @import url('./src/css/_base.css');
 @import url('./src/css/_grid.css');
 @import url('./src/css/_header.css');
-@import url('./src/css/_hero.css');*/
+@import url('./src/css/_hero.css');
+@import url('./src/css/_buttons.css');
 @import url('./src/css/_drinks.css');
 @import url('./src/css/_whats-on.css');
 @import url('./src/css/_find-us.css');
-@import url('./src/css/_buttons.css');
+@import url('./src/css/_instagram.css');
+@import url('./src/css/_about.css');
 @import url('./src/css/_footer.css');
 @import url('./src/css/_forms.css');
 @import url('./src/css/_utilities.css');

@@ -1,0 +1,31 @@
+.instagram {
+    background-color: var(--yellow);
+}
+
+.instagram__title {
+    font-family: 'Veneer Clean', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.instagram__text {
+    font-family: 'Veneer Clean', sans-serif;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .instagram__title {
+        font-size: 4rem;
+    }
+
+    .instagram__bg {
+        background: url(/images/img-phone.png) no-repeat top left;
+        background-size: 70px 111px;
+        width: 70px;
+        height: 111px;
+        position: absolute;
+        top: -30px;
+        left: 3%;
+    }
+}

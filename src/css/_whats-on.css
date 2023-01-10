@@ -1,6 +1,6 @@
 .whats-on__section {
     padding-top: 12rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     background: url('/images/bg-whats-on.jpg') no-repeat center var(--black);
     background-size: cover;
 }
