@@ -3,11 +3,13 @@ import stickyHeader from './src/js/sticky-header.js';
 import initAnimations from './src/js/animations.js';
 import carousel from './src/js/carousel.js';
 import map from './src/js/map.js';
+import accordion from './src/js/accordion.js';
 import removeInstagramEappsLink from './src/js/remove-instagram-eapps-link.js';
 
 menuToggle();
 // stickyHeader();
 initAnimations();
 carousel();
+accordion();
 map();
 // removeInstagramEappsLink();
