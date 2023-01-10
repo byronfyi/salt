@@ -43,6 +43,29 @@
     height: 2.5rem;
 }
 
+@media (min-width: 576px) {
+    .footer {
+        padding: 3rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 5rem 0;
+    }
+
+    .footer__col {
+        flex: 1 0 auto;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer__col {
+        flex: 1;
+    }
+}
+
 @media (min-width: 1200px) {
     .footer__col {
         flex: 1;

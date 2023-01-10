@@ -1,0 +1,136 @@
+.opening {
+    background-color: var(--green);
+    padding-top: 0;
+}
+
+.opening__row {
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.opening__col {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.opening__image {
+    display: block;
+    max-width: 178px;
+    margin: -3rem auto 2rem;
+}
+
+.opening__title {
+    font-family: 'Veneer Clean Soft', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.opening__table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opening__table .opening__title {
+    color: var(--yellow);
+    padding: 0 1.5rem 1.5rem;
+}
+
+.opening__table th {
+    color: var(--yellow);
+}
+
+.opening__table td {
+    text-align: center;
+}
+
+.opening__text {
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.opening__contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.opening__contact li {
+    position: relative;
+    min-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.opening__contact .icon {
+    background-color: var(--black);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.opening__contact svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--yellow);
+}
+
+.opening__contact a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.opening__contact a:hover,
+.opening__contact a:focus {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .opening__table,
+    .opening__text,
+    .opening__contact {
+        font-size: 1.25rem;
+    }
+
+    .opening__title {
+        font-size: 2.5rem;
+    }
+
+    .opening__table .opening__title {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .opening {
+        padding-top: 7rem;
+    }
+
+    .opening__col {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .opening__image {
+        margin-top: -2rem;
+        margin-right: 3rem;
+        max-width: 270px;
+    }
+
+    .opening__text {
+        max-width: 65ch;
+    }
+}
