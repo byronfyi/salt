@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 const map = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiYndhbGtlcm1pbGxzIiwiYSI6ImNsMWtsZHRjbDAxenIzZGtxcGswbndmZGkifQ.ClC7xToAETkDIreIXBv5hA';
 
-  const center = [53.827120, -1.505150];
+  const center = [-1.505150, 53.827120];
 
   var map = new mapboxgl.Map({
     container: 'map',
