@@ -66,6 +66,11 @@
     text-decoration: none;
 }
 
+.find-us__text a:hover,
+.find-us__text a:focus {
+    text-decoration: underline;
+}
+
 .find-us__text span {
     text-decoration: underline;
 }
