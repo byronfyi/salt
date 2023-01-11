@@ -34,10 +34,22 @@ function paralax() {
 }
 
 function transitions() {
-  gsap.from('.t1', {
+  gsap.from('.gsap-hero', {
     stagger: 0.15,
     opacity: 0,
     y: 40,
+  });
+
+  gsap.from('.gsap-whats-on', {
+    scrollTrigger: {
+      trigger: '.gsap-whats-on',
+      start: 'bottom bottom',
+      end: 'end 100px',
+      scrub: 1,
+    },
+    x: -400,
+    ease: 'none',
+    duration: 3,
   });
 }
 
