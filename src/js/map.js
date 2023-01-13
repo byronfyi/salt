@@ -19,8 +19,13 @@ const map = () => {
   map.scrollZoom.disable();
 
   // create the popup
-  const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-  'Salt Craft + Cocktails, 488 Roundhay Rd, Roundhay, Oakwood, Leeds, LS8 2HU'
+  const popup = new mapboxgl.Popup({
+      offset: 25,
+      className: 'map-popup',
+      maxWidth: '300px',
+      anchor: 'right',
+  }).setText(
+    '488 ROUNDHAY RD. OAKWOOD. LEEDS LS8 2H0'
   );
 
   // create DOM element for the marker
