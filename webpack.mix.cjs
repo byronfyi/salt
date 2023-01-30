@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
 
-mix.js('main.js', 'dist')
-    .sass('style.scss', 'style.css')
+mix.js('src/app.js', 'dist')
+    .sass('src/app.scss', 'app.css')
     .setPublicPath('dist');

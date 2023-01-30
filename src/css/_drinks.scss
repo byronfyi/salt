@@ -3,7 +3,7 @@
 }
 
 .drinks__bg {
-    background: url('/images/img-can.svg') no-repeat center;
+    background: url('/wp-content/themes/salt-oakwood/public/images/img-can.svg') no-repeat center;
     background-size: 110px;
     width: 110px;
     height: 110px;
@@ -33,7 +33,7 @@
 .drinks__carousel {
     padding: 2rem 0;
     transform: rotate(-2deg);
-    background-image: url('/images/bg-carousel-drinks.png'), url('/images/bg-carousel-drinks.png');
+    background-image: url('/wp-content/themes/salt-oakwood/public/images/bg-carousel-drinks.png'), url('/wp-content/themes/salt-oakwood/public/images/bg-carousel-drinks.png');
     background-color: #0F171F;
     background-repeat: repeat-x;
     background-position: top 2px center, bottom 2px center;
