@@ -40,6 +40,7 @@
     color: var(--yellow);
     margin-bottom: 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .hero__icons {
