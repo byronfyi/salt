@@ -19,7 +19,13 @@
     margin: -3rem auto 2rem;
 }
 
-.opening__title {
+.opening__table table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opening__title,
+.opening__table thead th {
     font-family: 'Veneer Clean Soft', sans-serif;
     font-size: 2rem;
     font-weight: 400;
@@ -34,8 +40,7 @@
     margin-right: auto;
 }
 
-.opening__table .opening__title {
-    color: var(--yellow);
+.opening__table thead th {
     padding: 0 1.5rem 1.5rem;
 }
 
@@ -105,11 +110,12 @@
         font-size: 1.25rem;
     }
 
-    .opening__title {
+    .opening__title,
+    .opening__table thead th {
         font-size: 2.5rem;
     }
 
-    .opening__table .opening__title {
+    .opening__table thead th {
         padding-bottom: 2rem;
     }
 }

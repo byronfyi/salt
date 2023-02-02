@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    background: url('/wp-content/themes/salt-oakwood/public/images/bg-hero-mobile.jpg') no-repeat center var(--black);
+    background: url('../public/images/bg-hero-mobile.jpg') no-repeat center var(--black);
 }
 
 .paralax {
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('/wp-content/themes/salt-oakwood/public/images/bg-hero.jpg') no-repeat center fixed var(--black);
+    background: url('../public/images/bg-hero.jpg') no-repeat center fixed var(--black);
     background-size: cover;
     background-position: 50% 0px;
     background-repeat: no-repeat;

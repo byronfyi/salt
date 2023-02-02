@@ -1,12 +1,12 @@
 .whats-on__section {
     padding-top: 12rem;
     padding-bottom: 3rem;
-    background: url('/wp-content/themes/salt-oakwood/public/images/bg-whats-on.jpg') no-repeat center var(--black);
+    background: url('../public/images/bg-whats-on.jpg') no-repeat center var(--black);
     background-size: cover;
 }
 
 .whats-on__bg {
-    background: url(/wp-content/themes/salt-oakwood/public/images/img-acorn.png) no-repeat center;
+    background: url('../public/images/img-acorn.png') no-repeat center;
     background-size: 270px;
     width: 270px;
     height: 341px;
@@ -32,7 +32,7 @@
 
 .whats-on__carousel {
     padding: 2.5rem 0;
-    background-image: url('/wp-content/themes/salt-oakwood/public/images/bg-carousel-whats-on.png'), url('/wp-content/themes/salt-oakwood/public/images/bg-carousel-whats-on.png');
+    background-image: url('../public/images/bg-carousel-whats-on.png'), url('../public/images/bg-carousel-whats-on.png');
     background-color: var(--pink);
     background-repeat: repeat-x;
     background-position: top -1px center, bottom -1px center;

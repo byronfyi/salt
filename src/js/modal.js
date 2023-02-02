@@ -1,5 +1,4 @@
 const modal = () => {
-    console.log('modal');
     // Modal Setup
     var modal = document.getElementById('modal');
 

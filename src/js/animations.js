@@ -72,7 +72,7 @@ function mouse() {
     ball.style.opacity = 1;
     const link = e.target.closest('a');
     if (link) {
-      ball.style.backgroundImage = `url('/images/${link.dataset.image}.jpg')`;
+      ball.style.backgroundImage = `url('/wp-content/themes/salt-venue/public/images/${link.dataset.image}.jpg')`;
     }
   });
 

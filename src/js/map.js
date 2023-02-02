@@ -4,7 +4,9 @@ import mapboxgl from 'mapbox-gl';
 const map = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiYndhbGtlcm1pbGxzIiwiYSI6ImNsMWtsZHRjbDAxenIzZGtxcGswbndmZGkifQ.ClC7xToAETkDIreIXBv5hA';
 
-  const center = [-1.505150, 53.827120];
+  const mapElement = document.getElementById('map');
+
+  const center = [mapElement.dataset.mapLong, mapElement.dataset.mapLat];
 
   var map = new mapboxgl.Map({
     container: 'map',
@@ -25,7 +27,7 @@ const map = () => {
       maxWidth: '300px',
       anchor: 'right',
   }).setText(
-    '488 ROUNDHAY RD. OAKWOOD. LEEDS LS8 2H0'
+    mapElement.dataset.mapAddress
   );
 
   // create DOM element for the marker
