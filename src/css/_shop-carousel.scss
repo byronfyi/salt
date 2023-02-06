@@ -1,0 +1,31 @@
+.shop__title {
+    margin-top: 7rem;
+}
+
+.shop__carousel {
+    background-color: var(--white);
+    padding: 0.5rem 0;
+    margin-top: 2.5rem;
+}
+
+.shop__carousel img {
+    max-width: 240px;
+    height: auto;
+}
+
+.shop__carousel p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .shop__carousel img {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .shop__carousel img {
+        max-width: 360px;
+    }
+}

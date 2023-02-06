@@ -22,8 +22,19 @@ const carousel = () => {
       pagination: false,
     } );
 
+    var shop = new Splide( '.splide__shop', {
+      type: 'loop',
+      perPage: 5,
+      perMove: 1,
+      gap: '0.5em',
+      focus: 'center',
+      autoWidth: true,
+      pagination: false,
+    } );
+
     drinks.mount();
     whatsOn.mount();
+    shop.mount();
 }
 
 export default carousel;

@@ -328,6 +328,43 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
+    
+    <h2 class="faqs__title shop__title">Browse Our Online Shop</h2>
+
+    <div class="splide splide__shop shop__carousel">
+        <div class="splide__track">
+            <ul class="splide__list text-center">
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-1.jpg" alt="" width="360" height="360">
+                    <p>JUTE SESSION IPA</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-2.jpg" alt="" width="360" height="360">
+                    <p>LOOM PALE</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-3.jpg" alt="" width="360" height="360">
+                    <p>CITRA NEIPA JNR</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-4.jpg" alt="" width="360" height="360">
+                    <p>HUCKABACK NEIPA</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-5.jpg" alt="" width="360" height="360">
+                    <p>ALPACA DDH IPA</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-6.jpg" alt="" width="360" height="360">
+                    <p>IKAT DDH DIPA</p>
+                </li>
+                <li class="splide__slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-7.jpg" alt="" width="360" height="360">
+                    <p>TRAM DOUBLE NEIPA</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <?php get_footer() ?>
