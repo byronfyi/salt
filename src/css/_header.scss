@@ -55,33 +55,9 @@
     bottom: 0;
     left: 0;
     padding-top: 100px;
-    background-color: var(--yellow);
+    background-color: var(--teal);
     min-width: 375px;
     display: none;
-}
-
-.header__nav-collapse::before {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 70px;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header__nav-collapse::after {
-    content: '';
-    display: block;
-    border-top: 24px solid var(--white);
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .menu-active {
@@ -94,7 +70,7 @@
     opacity: 0;
 }
 
-.menu-active .logo--dark {
+.menu-active .logo--light {
     visibility: visible;
     opacity: 1;
 }
@@ -121,10 +97,10 @@
 .header__nav-link {
     font-family: 'Veneer Clean', sans-serif;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--yellow);
     text-decoration: none;
     display: block;
-    padding: 0.5rem 2rem;
+    padding: 0 2rem;
 }
 
 .header__nav-link:hover,
@@ -281,12 +257,12 @@
         top: 0.375rem;
     }
 
-    .header__nav-collapse {
-        padding-top: 150px;
-    }
-
     .header__btn {
         font-size: 1.25rem;
         padding: 0.75rem 1.75rem;
+    }
+
+    .header__nav-link {
+        font-size: 2.5rem;
     }
 }

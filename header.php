@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="header__book">
-                    <a href="https://www.saltbeerfactory.co.uk/" class="header__btn">SALT Beer Factory</a>
+                    <a href="/" class="header__btn">Discover Our Tap Rooms</a>
                 </div>
             </div>
 
