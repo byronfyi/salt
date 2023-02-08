@@ -25,11 +25,12 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 375px;
+  height: 375px;
   opacity: 1 !important;
-  max-width: 830px;
   position: relative;
   z-index: 10;
+  object-fit: cover;
 }
 
 .modal-caption {
@@ -105,4 +106,18 @@
   color: var(--yellow);
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    width: 800px;
+    height: 800px;
+  }
 }
