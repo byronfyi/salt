@@ -2,9 +2,6 @@
     background-color: var(--yellow);
 }
 
-.gallery__container {
-}
-
 .gallery__title {
     font-family: 'Veneer Clean', sans-serif;
     font-size: 2rem;
@@ -31,18 +28,22 @@
 }
 
 .gallery__list li {
-    flex: 1 0 50%;
-    max-width: 50%;
+    flex: 1 0 160px;
+    max-width: 160px;
 }
 
 .gallery__list img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
 }
 
 @media (min-width: 768px) {
+    .gallery__container {
+        max-width: 768px;
+    }
+
     .gallery__title {
         font-size: 4rem;
     }
@@ -62,19 +63,33 @@
     }
 
     .gallery__list li {
-        flex-basis: 20%;
-        max-width: 20%;
+        flex-basis: 144px;
+        max-width: 144px;
+    }
+
+    .gallery__list img {
+        width: 144px;
+        height: 144px;
     }
 }
 
 @media (min-width: 1200px) {
+    .gallery__container {
+        max-width: 1200px;
+    }
+
     .gallery__list {
         max-width: none;
     }
 
     .gallery__list li {
-        flex-basis: 20%;
-        max-width: 20%;
+        flex-basis: 230px;
+        max-width: 230px;
+    }
+
+    .gallery__list img {
+        width: 230px;
+        height: 230px;
     }
 }
 

@@ -215,8 +215,7 @@
         <div class="gallery__bg"></div>
 
         <div class="text-center">
-            <h2 class="gallery__title">Follow us on instagram</h2>
-            <p class="gallery__text">@SALTOAKWOOD</p>
+            <h2 class="gallery__title">Gallery</h2>
 
             <?php if( have_rows('gallery') ): ?>
                 <ul class="gallery__list">
