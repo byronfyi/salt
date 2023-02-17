@@ -58,12 +58,12 @@
                     <ul class="header__nav">
                         <li>
                             <a href="/bar-kitchen" class="header__nav-link" data-image="salt-bar-kitchen">
-                                <span>SALT BAR + KITCHEN</span>
+                                <span>BAR + KITCHEN</span>
                             </a>
                         </li>
                         <li>
                             <a href="/leeds-city" class="header__nav-link" data-image="salt-leeds-city">
-                                <span>SALT LEEDS CITY</span>
+                                <span>LEEDS CITY</span>
                             </a>
                         </li>
                         <li>
@@ -73,32 +73,32 @@
                         </li>
                         <li>
                             <a href="/deptford" class="header__nav-link" data-image="salt-deptford">
-                                <span>SALT DEPTFORD</span>
+                                <span>DEPTFORD</span>
                             </a>
                         </li>
                         <li>
                             <a href="/woolwich" class="header__nav-link" data-image="salt-woolwich">
-                                <span>SALT WOOLWICH</span>
+                                <span>WOOLWICH</span>
                             </a>
                         </li>
                         <li>
                             <a href="/granary-wharf" class="header__nav-link" data-image="salt-boston-spa">
-                                <span>SALT GRANARY WHARF</span>
+                                <span>GRANARY WHARF</span>
                             </a>
                         </li>
                         <li>
                             <a href="/boston-spa" class="header__nav-link" data-image="salt-deptford">
-                                <span>SALT BOSTON SPA</span>
+                                <span>BOSTON SPA</span>
                             </a>
                         </li>
                         <li>
                             <a href="/oakwood" class="header__nav-link" data-image="salt-woolwich">
-                                <span>SALT OAKWOOD</span>
+                                <span>OAKWOOD</span>
                             </a>
                         </li>
                         <li>
                             <a href="/calls-landing" class="header__nav-link" data-image="salt-boston-spa">
-                                <span>SALT CALLS LANDING</span>
+                                <span>CALLS LANDING</span>
                             </a>
                         </li>
                     </ul>
