@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="header__book">
-                    <a href="/" class="header__btn">Discover Our Tap Rooms</a>
+                    <a href="https://www.saltbeerfactory.co.uk/" class="header__btn">SALT Beer Factory</a>
                 </div>
             </div>
 
@@ -58,47 +58,47 @@
                     <ul class="header__nav">
                         <li>
                             <a href="/bar-kitchen" class="header__nav-link" data-image="salt-bar-kitchen">
-                                <span>BAR + KITCHEN</span>
+                                <span>SALT BAR + KITCHEN</span>
                             </a>
                         </li>
                         <li>
                             <a href="/leeds-city" class="header__nav-link" data-image="salt-leeds-city">
-                                <span>LEEDS CITY</span>
+                                <span>SALT LEEDS CITY</span>
                             </a>
                         </li>
                         <li>
                             <a href="/sheffield" class="header__nav-link" data-image="salt-sheffield">
-                                <span>SHEFFIELD</span>
+                                <span>SALT SHEFFIELD</span>
                             </a>
                         </li>
                         <li>
                             <a href="/deptford" class="header__nav-link" data-image="salt-deptford">
-                                <span>DEPTFORD</span>
+                                <span>SALT DEPTFORD</span>
                             </a>
                         </li>
                         <li>
                             <a href="/woolwich" class="header__nav-link" data-image="salt-woolwich">
-                                <span>WOOLWICH</span>
+                                <span>SALT WOOLWICH</span>
                             </a>
                         </li>
                         <li>
                             <a href="/granary-wharf" class="header__nav-link" data-image="salt-boston-spa">
-                                <span>GRANARY WHARF</span>
+                                <span>SALT GRANARY WHARF</span>
                             </a>
                         </li>
                         <li>
                             <a href="/boston-spa" class="header__nav-link" data-image="salt-deptford">
-                                <span>BOSTON SPA</span>
+                                <span>SALT BOSTON SPA</span>
                             </a>
                         </li>
                         <li>
                             <a href="/oakwood" class="header__nav-link" data-image="salt-woolwich">
-                                <span>OAKWOOD</span>
+                                <span>SALT OAKWOOD</span>
                             </a>
                         </li>
                         <li>
                             <a href="/calls-landing" class="header__nav-link" data-image="salt-boston-spa">
-                                <span>CALLS LANDING</span>
+                                <span>SALT CALLS LANDING</span>
                             </a>
                         </li>
                     </ul>

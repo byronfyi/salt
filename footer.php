@@ -3,7 +3,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer__row">
-                <div class="footer__col">
+                <div class="footer__col footer__address">
                     <?php if( get_field('footer_address') ): ?>
                         <div class="footer__block">
                             <h4>Address</h4>
@@ -15,7 +15,7 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="footer__col">
+                <div class="footer__col footer__opening">
                     <?php if( get_field('footer_opening_hours') ): ?>
                         <div class="footer__block">
                             <h4>Opening Hours</h4>
@@ -33,7 +33,7 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="footer__col">
+                <div class="footer__col footer__contact">
                     <div class="footer__block">
                         <h4>Contact</h4>
                         <?php if( get_field('contact_phone') ): ?>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="footer__col">
+                <div class="footer__col footer__mail">
                     <div class="footer__block">
                         <form class="form">
                             <label for="email">Mailing List</label>

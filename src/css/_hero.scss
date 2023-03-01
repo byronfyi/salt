@@ -136,11 +136,16 @@
 
     .paralax {
         padding-top: 300px;
+        min-height: calc(100vh - 200px);
     }
 
     .paralax-bg {
         display: flex;
         background-image: none;
+    }
+
+    .paralax-bg-default {
+        background-image: url('../public/images/bg-hero.jpg');
     }
 
     .paralax-bg video {

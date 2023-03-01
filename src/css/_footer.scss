@@ -76,7 +76,24 @@
 }
 
 @media (min-width: 1200px) {
+    .footer__row {
+        flex-wrap: nowrap;
+    }
+
     .footer__col {
+        flex: 1;
+        width: auto;
+    }
+
+    .footer__address {
+        flex: auto;
+    }
+
+    .footer__opening {
+        flex: 1 0 auto;
+    }
+
+    .footer__mail {
         flex: 1;
     }
 }

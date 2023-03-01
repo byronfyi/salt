@@ -2,11 +2,17 @@
 
 <section>
     <div class="hero paralax">
-        <div class="paralax-bg">
-            <video autoplay loop muted>
-                <source src="<?php echo get_template_directory_uri(); ?>/public/images/video-oakwood-2.mp4" type="video/mp4">
-            </video>
-        </div>
+        <?php if( get_field('hero_video') ): ?>
+            <div class="hero__video">
+                <video autoplay loop muted>
+                    <source src="<?php the_field('hero_video'); ?>" type="video/mp4">
+                </video>
+            </div>
+        <?php elseif ( get_field('hero_image') ) : ?>
+            <div class="paralax-bg" style="background-image: url(<?php the_field('hero_image'); ?>)"></div>
+        <?php else: ?>
+            <div class="paralax-bg paralax-bg-default"></div>
+        <?php endif; ?>
         
         <h1 class="hero__title gsap-hero">
             <?php if( get_field('page_title_1') ): ?>
@@ -63,10 +69,13 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/public/images/icon-offering-baby.svg" alt="" width="40" height="37">
                 <span>FAMILY FRIENDLY</span>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/public/images/icon-offering-car.svg" alt="" width="40" height="32">
-                <span>PARKING</span>
-            </li>
+
+            <?php if(! get_field('no_parking') ): ?>
+                <li>
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/icon-offering-car.svg" alt="" width="40" height="32">
+                    <span>PARKING</span>
+                </li>
+            <?php endif; ?>
         </ul>
     </div>
 </section>
@@ -351,15 +360,15 @@
                 </li>
                 <li class="splide__slide">
                     <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-5.jpg" alt="" width="360" height="360">
-                    <p>ALPACA DDH IPA</p>
+                    <p>TRAM DOUBLE NEIPA</p>
                 </li>
                 <li class="splide__slide">
                     <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-6.jpg" alt="" width="360" height="360">
-                    <p>IKAT DDH DIPA</p>
+                    <p>ALPACA DDH IPA</p>
                 </li>
                 <li class="splide__slide">
                     <img src="<?php echo get_template_directory_uri(); ?>/public/images/img-can-7.jpg" alt="" width="360" height="360">
-                    <p>TRAM DOUBLE NEIPA</p>
+                    <p>IKAT DDH DIPA</p>
                 </li>
             </ul>
         </div>
